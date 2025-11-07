@@ -26,3 +26,9 @@ btn.addEventListener("click", (event) => {
     }
     
 })
+
+window.onload = (event) => {
+  const size = 30  
+  input.value = size
+  generateGrid(size, grid)
+};
