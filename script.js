@@ -18,5 +18,11 @@ let input = document.querySelector("input")
 
 btn.addEventListener("click", (event) => {
     let gridSize = input.value
-    generateGrid(gridSize, grid)
+    if (gridSize > 0 && gridSize <= 100) {
+        generateGrid(gridSize, grid)
+    }
+    else {
+        alert('Please choose a value between 1 and 100')
+    }
+    
 })

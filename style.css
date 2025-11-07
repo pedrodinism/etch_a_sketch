@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 #grid {
@@ -19,4 +20,28 @@ button {
   background: cadetblue;
   font-size: 14px;
   color: white;
+}
+
+.header {
+  background: darkgray;
+  height: 60px;  
+}
+
+.mainContent {
+  margin: 40px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.settings {
+  width: 600px;
+  display: flex;
+  justify-content: end;
+  gap: 1em;
+  margin-bottom: 20px;
+}
+
+input {
+  height: 30px;
 }
